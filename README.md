@@ -1,2 +1,2 @@
 # python
-All python related stuff and such like that
+All python related stuff and such as that
