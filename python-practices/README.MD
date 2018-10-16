@@ -1,0 +1,1 @@
+This project is for practice purpose only. It contains some small and some bigger python scripts, where I fiddle around with the basic (and intermediate) python mechanics.
