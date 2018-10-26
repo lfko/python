@@ -1,0 +1,1 @@
+A simple python application, using the redis python module for communicating with a redis database. It contains some basic CRUD operations on basic data types.
