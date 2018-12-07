@@ -1,0 +1,170 @@
+{
+	"language":"turkish",
+	"abbreviation":"tr",
+	"desc":"rule set for the turkish language (incomplete)",
+	"created":"06.12.2018",
+	"created by":"fb",
+	"modified":"06.12.2018",
+	"modified by":"fb",
+	"active":"TRUE",
+	"usesVowelHarm":"TRUE",
+	
+	"pronouns":[
+		{
+			"category":"personal",
+			"mandatory":"FALSE",
+			"members": [
+				{
+					"ich":"ben",
+					"du":"sen",
+					"er/sie/es":"o",
+					"wir":"biz",
+					"ihr":"siz",
+					"sie":"onlar"
+				}
+			]
+		},
+		{
+			"category":"possessiv",
+			"mandatory":"FALSE",
+			"members": [
+				{
+					"mein":"benim",
+					"sein":"senin",
+					"ihr/sein":"onun",
+					"unser":"bizim",
+					"euer":"sizin",
+					"ihr":"onlar\u0131"
+				}
+			]
+		}
+	],
+	
+	"verb":[
+		{
+			"category":"verb",
+			"type":"rules",
+			"canUse":[
+				"negation",
+				"times",
+				"person"
+			],
+			"order":[
+				"negation",
+				"times",
+				"person"
+			]
+		}
+		
+	],
+	
+	"mode":[
+		{
+			"category":"mode",
+			"negation":[
+				"me",
+				"ma"
+			]
+		}
+	],
+	
+	"possession":[
+		{
+			"category":"possession",
+			"mandatory":"TRUE",
+			"usesVowHarm":"TRUE",
+			"vowHarmType":"high",
+			"suffixes": [
+					"_m",
+					"_n",
+					"s_",
+					"m_z",
+					"n_z",
+					"l_ri"
+			]
+		}
+	],
+	
+	"person":[
+		{
+			"category":"person",
+			"usesVowHarm":"TRUE",
+			"vowHarmType":"high",
+			"type1":[
+					"_m",
+					"s_n",
+					"",
+					"_z",
+					"s_n_z",
+					"l-r"
+			],
+			"type2":[
+					"m",
+					"n",
+					"",
+					"k",
+					"n_z",
+					"l-r"
+			]			
+		}
+	],
+	
+	"tense":[
+		{
+			"category":"tenses",
+			"usesVowHarm":"TRUE",
+			"vowHarmType":"high",
+			"futur":[
+					"*ec*e",
+					"*ac*a"
+			],
+			"past":[
+					"d_"
+			],
+			"present":[
+				"_y*or"
+			]
+		}
+	],
+	"number":[
+		{
+			"category":"number",
+			"suffix":"l_r",
+			"mandatory":"TRUE",
+			"usesVowHarm":"TRUE",
+			"vowHarmType":"low"
+		}		
+	],
+
+	"vowel_harmony":[
+		{
+			"category":"vowel_harmony",
+			"type":"vowels",
+			"low_vowels":[
+				{
+					"e":"e",
+					"i":"e",
+					"ö":"e",
+					"ü":"e",
+					"a":"a",
+					"ı":"a",
+					"o":"a",
+					"u":"a"	
+				}
+			],		
+			"high_vowels":[
+				{
+					"e":"i",
+					"i":"i",
+					"ö":"ü",
+					"ü":"ü",
+					"a":"ı",
+					"ı":"ı",
+					"o":"u",
+					"u":"u"	
+				}
+			]
+			
+		}
+	]
+}
