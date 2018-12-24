@@ -3,6 +3,8 @@ Created on Dec 6, 2018
 
 @author: fb
 '''
+import re
+
 from lfko.python.languaid.core.util.ruleLoader import RuleLoader
 
 
@@ -65,16 +67,33 @@ class Noun(object):
 
         return built_word
     
-    def deconstructNoun(self, noun):
+    def deconstructNoun(self, noun='cantalarim'):
         """ deconstruct an already valid noun to its separate suffixes 
         
         @param noun: the valid noun we'd like to deconstruct
         @return: dictionary of found suffixes
         """
+        found_endings = {}
         
-        return {}
+        suffix_order = self.rl.find(('noun', 'order'))
+        suffix_order.reverse()
+
+        for order in suffix_order:
+        
+            suffixes = self.rl.find((order, 'suffixes'))
+            
+            for s in suffixes:
+            
+                s_tmp = s.replace('-', '.').replace('_', '.')
+                
+                if re.search(r"(" + s_tmp + ")$", noun):
+                    found_endings[order] = s
+                    noun = noun[:-len(s)]
+            
+        return found_endings
 
 
 n = Noun()
-naun = n.constructNoun(noun='canta', args=[('number', 'suffix'), ('possession', 'suffixes', 3)])
-print(naun)
+n.deconstructNoun()
+# naun = n.constructNoun(noun='canta', args=[('number', 'suffix'), ('possession', 'suffixes', 3)])
+# print(naun)

@@ -40,6 +40,21 @@
 		}
 	],
 	
+	"noun":[
+		{
+			"category":"noun",
+			"type":"rules",
+			"canUse":[
+				"person",
+				"possession",
+				"pronouns"
+			],
+			"order":[
+				"number",
+				"possession"
+			]
+		}
+	],
 	"verb":[
 		{
 			"category":"verb",
@@ -55,7 +70,6 @@
 				"person"
 			]
 		}
-		
 	],
 	
 	"mode":[
@@ -129,11 +143,27 @@
 	"number":[
 		{
 			"category":"number",
-			"suffix":"l_r",
+			"suffixes":"l-r",
 			"mandatory":"TRUE",
 			"usesVowHarm":"TRUE",
 			"vowHarmType":"low"
 		}		
+	],
+	
+	"vowels":[
+		{
+			"category":"vowels",
+			"vowels":[
+				"a",
+				"e",
+				"i",
+				"o",
+				"u",
+				"ü",
+				"ö",
+				"ı"
+			]
+		}
 	],
 
 	"vowel_harmony":[

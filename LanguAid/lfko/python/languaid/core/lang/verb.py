@@ -13,7 +13,9 @@ class Verb():
         """ """
         self.rl = RuleLoader()
         # actual turkish vowels
-        self.vowels = ['a', 'e', 'i', 'o', 'u', 'ö', 'ü']
+        # self.vowels = ['a', 'e', 'i', 'o', 'u', 'ö', 'ü', 'ı']
+        self.vowels = self.rl.find(('vowels', 'vowels'))
+        # print(self.vowels)
 
     def construct(self, word, args=[]):
         """ 
@@ -22,7 +24,7 @@ class Verb():
 
         # TODO check arguments
 
-        #args = [('mode', 'negation'),
+        # args = [('mode', 'negation'),
         #        ('tense', 'present'), ('person', 'type1', 5)]
         # at first, read the args dict and identify, which rules should be
         # loaded (e.g. for a specific tense)
@@ -44,8 +46,8 @@ class Verb():
                     if buildRule[-2] in self.vowels:
                         buildRule = buildRule.replace(
                             buildRule[-2], '')
-                    #suffix = suffix.replace(suffix[len(suffix) - 1], '')
-                    #suffix = reduce(lambda a, b: a.replace(b, ''), self.vowels, suffix)
+                    # suffix = suffix.replace(suffix[len(suffix) - 1], '')
+                    # suffix = reduce(lambda a, b: a.replace(b, ''), self.vowels, suffix)
                     # print(suffix)
             buildRule = buildRule + " + " + "'" + suffix + "'"
 
@@ -105,5 +107,5 @@ class Verb():
         return word
 
 
-#vb = Verb()
-#vb.construct()
+vb = Verb()
+# vb.construct()

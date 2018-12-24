@@ -7,7 +7,9 @@ Created on Dec 6, 2018
 
 '''
 
+import configparser
 import json
+import pathlib
 from pprint import pprint
 
 
@@ -20,8 +22,18 @@ class RuleLoader():
             @param category: name of the category, for which the rules should be loaded
             @return: dictionary containing the specific rules
         """
+        # TODO be aware, that directories can change
+        ini_dir = pathlib.Path('../../../../../')
+        for file in ini_dir.iterdir():
+            if str(file).find('settings.ini') > 0:
+                ini_file = file
+        
+        config = configparser.ConfigParser()
+        config.read(ini_file)
+        # print(config.sections())
+        # print(config['RULES']['file'])
 
-        with open('/home/lfko/git/python/LanguAid/lfko/rules.json') as f:
+        with open(config['RULES']['file']) as f:
             self.data = json.load(f)
 
         # pprint(self.data)
@@ -41,8 +53,8 @@ class RuleLoader():
             rules = self.data[argsTuple[0]][0][argsTuple[1]][argsTuple[2]]
         else:
             rules = self.data[argsTuple[0]][0][argsTuple[1]]
+            
+        print('loaded', rules)
 
-        if type(rules) == list:
-            return rules[0]
-        else:
-            return rules
+        return [rules] if type(rules) != list else rules
+
