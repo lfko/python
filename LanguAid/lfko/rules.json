@@ -50,7 +50,7 @@
 				"pronouns"
 			],
 			"order":[
-				"number",
+				"plural",
 				"possession"
 			]
 		}
@@ -65,30 +65,26 @@
 				"person"
 			],
 			"order":[
-				"negation",
+				"mode",
 				"times",
 				"person"
 			]
 		}
 	],
 	
-	"mode":[
+	"negation":[
 		{
 			"category":"mode",
-			"negation":[
-				"me",
-				"ma"
+			"items":[
+				"m-"
 			]
 		}
 	],
 	
 	"possession":[
 		{
-			"category":"possession",
-			"mandatory":"TRUE",
-			"usesVowHarm":"TRUE",
-			"vowHarmType":"high",
-			"suffixes": [
+			"category":"construct",
+			"items": [
 					"_m",
 					"_n",
 					"s_",
@@ -99,61 +95,124 @@
 		}
 	],
 	
-	"person":[
+	"present":[
 		{
-			"category":"person",
-			"usesVowHarm":"TRUE",
-			"vowHarmType":"high",
-			"type1":[
-					"_m",
-					"s_n",
-					"",
-					"_z",
-					"s_n_z",
-					"l-r"
-			],
-			"type2":[
-					"m",
-					"n",
-					"",
-					"k",
-					"n_z",
-					"l-r"
+			"category":"times",
+			"type":"construct",
+			"items":[
+				"_y*or_m",
+				"_y*ors_n",
+				"_y*or",
+				"_y*or_z",
+				"_y*ors_n_z",
+				"_y*orl-r"
 			]			
 		}
 	],
 	
-	"tense":[
+	"future":[
+		{
+			"category":"times",
+			"type":"construct",
+			"items":[
+				"%-c-ğ_m",
+				"%-c-ğ_n",
+				"%-c-k",
+				"%-c-ğ_z",
+				"%-c-ğ_n_z",
+				"%-c-kl-r"				
+			]
+		}
+	],
+	
+	"past":[
+		{
+			"category":"times",
+			"type":"construct",
+			"items":[
+				"d_m",
+				"d_n",
+				"d_",
+				"d_k",
+				"d_n_z",
+				"d_l-r"
+			]
+		}
+	],
+	
+	"person":[
+		{
+			"category":"person",
+			"type":"deconstruct",
+			"items":[
+					"_m",
+					"s*_n",
+					"\\W",
+					"_[zk]",
+					"s*_n_z",
+					"l-r"
+			]
+		}
+	],
+		
+	"times":[
 		{
 			"category":"tenses",
 			"usesVowHarm":"TRUE",
 			"vowHarmType":"high",
 			"futur":[
-					"*ec*e",
-					"*ac*a"
+				"person_type1",
+				"ece",
+				"aca"
 			],
 			"past":[
-					"d_"
+				"d_"
 			],
 			"present":[
-				"_y*or"
+				"person_type1",
+				"_yor"
 			]
 		}
 	],
-	"number":[
+	
+	"times":[
 		{
-			"category":"number",
-			"suffixes":"l-r",
-			"mandatory":"TRUE",
-			"usesVowHarm":"TRUE",
-			"vowHarmType":"low"
+			"category":"deconstruct",
+			"items":[
+				{
+					"y*-c-[ğk]":"future",
+					"_yor":"present",
+					"[td]_":"past"
+				}
+			]
+		}
+	],
+	
+	"mode":[
+		{
+			"category":"deconstruct",
+			"items":[
+				{
+					"m[ea]":"negation",
+					"_ş":"reciprocal"
+				}
+			]
+		}
+	],
+	
+	"plural":[
+		{
+			"category":"deconstruct",
+			"items":[
+				"l-r"
+			]
 		}		
 	],
 	
 	"vowels":[
 		{
 			"category":"vowels",
-			"vowels":[
+			"items":[
 				"a",
 				"e",
 				"i",
@@ -166,11 +225,11 @@
 		}
 	],
 
-	"vowel_harmony":[
+	"low_vowels":[
 		{
 			"category":"vowel_harmony",
 			"type":"vowels",
-			"low_vowels":[
+			"items":[
 				{
 					"e":"e",
 					"i":"e",
@@ -181,8 +240,14 @@
 					"o":"a",
 					"u":"a"	
 				}
-			],		
-			"high_vowels":[
+			]		
+		}
+	],
+	"high_vowels":[
+		{
+			"category":"vowel_harmony",
+			"type":"vowels",
+			"items":[
 				{
 					"e":"i",
 					"i":"i",
@@ -194,7 +259,6 @@
 					"u":"u"	
 				}
 			]
-			
 		}
 	]
 }

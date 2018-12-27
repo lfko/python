@@ -10,7 +10,6 @@ Created on Dec 6, 2018
 import configparser
 import json
 import pathlib
-from pprint import pprint
 
 
 class RuleLoader():
@@ -36,8 +35,22 @@ class RuleLoader():
         with open(config['RULES']['file']) as f:
             self.data = json.load(f)
 
+        # self.data = json.dumps(self.data)
+        # print(self.data)
         # pprint(self.data)
 
+    def findAllKeys(self, type='person'):
+        """ """
+        foodict = {k: v for k, v in self.data.items() if k.startswith(type)}
+        # print(foodict)
+        print([v for k, v in foodict[type][0].items() if k.startswith('suffixes')])
+        # print(foodict.keys())
+        # print(foodict.items())
+        # print(foodict.values())
+        # bardict = {k: v for k, v in foodict.keys().items() if k.startswith('category')}
+        # print(bardict)
+        # [v for k in self.data.keys() if k == type]
+    
     def find(self, argsTuple):
         """
         find the rule entries for a specific key 
@@ -47,14 +60,24 @@ class RuleLoader():
         @return: list of rule elements  
 
         """
+        rules = []
         # list of specific rules for a key of a category
-        if len(argsTuple) == 3:
+        if len(argsTuple) == 2:
             # tuples allow for more complex rule queries
-            rules = self.data[argsTuple[0]][0][argsTuple[1]][argsTuple[2]]
-        else:
-            rules = self.data[argsTuple[0]][0][argsTuple[1]]
+            rules = self.data[argsTuple[0]][0]['items'][argsTuple[1]]
+        elif len(argsTuple) == 1:
+            rules = self.data[argsTuple[0]][0]['items']
             
-        print('loaded', rules)
+        return rules[0] if len(rules) == 1 else rules
 
-        return [rules] if type(rules) != list else rules
+    def getSuffixOrder(self, wordType):
+        """ 
+        
+        """
+        suffixOrder = self.data[wordType][0]['order']
+        
+        return suffixOrder
 
+
+rl = RuleLoader()
+rl.findAllKeys()
