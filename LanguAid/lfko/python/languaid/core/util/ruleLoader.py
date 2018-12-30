@@ -1,64 +1,42 @@
 '''
-Created on Dec 6, 2018
+    Created on Dec 6, 2018
 
-@author: lfko
-
-    Intention: grammatical rules should be loadable, so that the application has a more universal approach
+    @author: lfko
+    @summary: : grammatical rules should be loadable, so that the application has a more universal approach
 
 '''
 
-import configparser
 import json
-import pathlib
+from lfko.python.languaid.core.util.settings import Settings
 
 
 class RuleLoader():
-    """
-    """
 
     def __init__(self):
         """ 
+            @summary: default constructor
             @param category: name of the category, for which the rules should be loaded
             @return: dictionary containing the specific rules
         """
-        # TODO be aware, that directories can change
-        ini_dir = pathlib.Path('../../../../../')
-        for file in ini_dir.iterdir():
-            if str(file).find('settings.ini') > 0:
-                ini_file = file
         
-        config = configparser.ConfigParser()
-        config.read(ini_file)
-        # print(config.sections())
-        # print(config['RULES']['file'])
+        self.appSet = Settings()
 
-        with open(config['RULES']['file']) as f:
+        with open(self.appSet.getValue('RULES', 'file')) as f:
             self.data = json.load(f)
 
-        # self.data = json.dumps(self.data)
-        # print(self.data)
-        # pprint(self.data)
-
-    def findAllKeys(self, type='person'):
-        """ """
-        foodict = {k: v for k, v in self.data.items() if k.startswith(type)}
-        # print(foodict)
+    def findAllKeys(self, key_type):
+        """ 
+            @todo: not yet used
+        """
+        foodict = {k: v for k, v in self.data.items() if k.startswith(key_type)}
+        
         print([v for k, v in foodict[type][0].items() if k.startswith('suffixes')])
-        # print(foodict.keys())
-        # print(foodict.items())
-        # print(foodict.values())
-        # bardict = {k: v for k, v in foodict.keys().items() if k.startswith('category')}
-        # print(bardict)
-        # [v for k in self.data.keys() if k == type]
-    
+
     def find(self, argsTuple):
         """
-        find the rule entries for a specific key 
-        @param category:
-        @param key: key to a subcategory
-        @param value: value for a specific item in a subcategory
-        @return: list of rule elements  
-
+            @summary: find the rule entries for a specific key 
+            @param argsTuple: value for a specific item in a subcategory
+            @return: list of rule elements or the element itself
         """
         rules = []
         # list of specific rules for a key of a category
@@ -67,17 +45,16 @@ class RuleLoader():
             rules = self.data[argsTuple[0]][0]['items'][argsTuple[1]]
         elif len(argsTuple) == 1:
             rules = self.data[argsTuple[0]][0]['items']
-            
+
         return rules[0] if len(rules) == 1 else rules
 
     def getSuffixOrder(self, wordType):
         """ 
-        
+            @summary: 
+            @param wordType:
+            @return:  
         """
         suffixOrder = self.data[wordType][0]['order']
-        
+
         return suffixOrder
 
-
-rl = RuleLoader()
-rl.findAllKeys()

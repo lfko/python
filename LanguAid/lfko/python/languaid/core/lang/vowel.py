@@ -1,7 +1,8 @@
 '''
-Created on Dec 30, 2018
+    Created on Dec 30, 2018
 
-@author: lfko
+    @author: lfko
+    @summary: 
 '''
 from lfko.python.languaid.core.util.ruleLoader import RuleLoader
 

@@ -47,11 +47,13 @@
 			"canUse":[
 				"person",
 				"possession",
-				"pronouns"
+				"pronouns",
+				"case"
 			],
 			"order":[
 				"plural",
-				"possession"
+				"possession",
+				"case"
 			]
 		}
 	],
@@ -62,12 +64,44 @@
 			"canUse":[
 				"negation",
 				"times",
-				"person"
+				"person",
+				"voluntative",
+				"imperative"
 			],
 			"order":[
+				"reciprocal",
 				"mode",
 				"times",
 				"person"
+			]
+		}
+	],
+	
+	"voluntative":[
+		{
+			"category":"imperative",
+			"items":[
+				"-y_m",
+				"-l_m"
+			]
+		} 
+	],
+	
+	"imperative":[
+		{
+			"category":"imperative",
+			"items":[
+				"",
+				"-n"
+			]
+		} 
+	],
+	
+	"reciprocal":[
+		{
+			"category":"mode",
+			"items":[
+				"-ş"
 			]
 		}
 	],
@@ -87,10 +121,10 @@
 			"items": [
 					"_m",
 					"_n",
-					"s_",
-					"m_z",
-					"n_z",
-					"l_ri"
+					"%_",
+					"_m_z",
+					"_n_z",
+					"l-r_"
 			]
 		}
 	],
@@ -110,7 +144,7 @@
 		}
 	],
 	
-	"future":[
+	"futur":[
 		{
 			"category":"times",
 			"type":"construct",
@@ -154,33 +188,13 @@
 			]
 		}
 	],
-		
-	"times":[
-		{
-			"category":"tenses",
-			"usesVowHarm":"TRUE",
-			"vowHarmType":"high",
-			"futur":[
-				"person_type1",
-				"ece",
-				"aca"
-			],
-			"past":[
-				"d_"
-			],
-			"present":[
-				"person_type1",
-				"_yor"
-			]
-		}
-	],
-	
+			
 	"times":[
 		{
 			"category":"deconstruct",
 			"items":[
 				{
-					"y*-c-[ğk]":"future",
+					"y*-c-[ğk]":"futur",
 					"_yor":"present",
 					"[td]_":"past"
 				}
@@ -194,7 +208,9 @@
 			"items":[
 				{
 					"m[ea]":"negation",
-					"_ş":"reciprocal"
+					"_ş":"reciprocal",
+					"y*-l_m":"voluntativ",
+					"y*-y_m":"voluntativ"
 				}
 			]
 		}
@@ -202,9 +218,17 @@
 	
 	"plural":[
 		{
-			"category":"deconstruct",
+			"category":"construct|deconstruct",
 			"items":[
 				"l-r"
+			]
+		}		
+	],
+	"singular":[
+		{
+			"category":"construct|deconstruct",
+			"items":[
+				""
 			]
 		}		
 	],
@@ -223,6 +247,21 @@
 				"ı"
 			]
 		}
+	],
+	
+	"consonants":[
+		{
+			"category":"consonants",
+			"items":[
+				{
+					"ç":"c",
+					"p":"b",
+					"t":"d",
+					"k":"ğ"	
+				}
+			]
+		}
+	
 	],
 
 	"low_vowels":[

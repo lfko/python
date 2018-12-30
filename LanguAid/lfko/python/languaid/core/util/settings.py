@@ -1,8 +1,8 @@
 '''
-Created on Dec 28, 2018
+    Created on Dec 28, 2018
 
-@author: lfko
-@summary: Class for loading a configuration file and retrieving values from this file
+    @author: fb
+    @summary: Class for loading a configuration file and retrieving values from this file
 '''
 
 import configparser, pathlib, os
@@ -34,7 +34,7 @@ class Settings():
             raise TypeError('Supplied directory name is not a valid directory.')
         
         ini_dir = pathlib.Path(mainDir + '/python/LanguAid/')
-        logging.debug('ini directory ' + ini_dir)
+        logging.debug('ini directory ' + str(ini_dir))
         
         # for loop through all files in the specified directory
         for file in ini_dir.iterdir():
@@ -51,6 +51,7 @@ class Settings():
         """ 
             @summary: list all currently available sections
             @todo: return an actual list
+            @return: 
         """
         
         print(self.config.sections())
@@ -61,6 +62,7 @@ class Settings():
         """ 
             @summary: list all keys and corresponding values for a specific section
             @todo: return an actual list
+            @return: 
         """
         
         print(self.config.items(section))

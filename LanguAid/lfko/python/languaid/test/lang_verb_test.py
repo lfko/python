@@ -1,8 +1,8 @@
 '''
 Created on Dec 27, 2018
 
-@author: Florian "lfko" Becker
-@summary: unit tests for verb construction/deconstruction
+    @author: fb
+    @summary: unit tests for verb construction/deconstruction
 '''
 import unittest
 from lfko.python.languaid.core.lang.verb import Verb
@@ -11,7 +11,9 @@ from lfko.python.languaid.core.lang.verb import Verb
 class LangCoreVerbTest(unittest.TestCase):
     
     def testVerbConstructPresent(self):
-        """ """
+        """ 
+        
+        """
         vb = Verb()
         self.assertEqual(vb.construct('kullanmak', [[vb.Modes.negation.name], [vb.Tenses.present.name, 5]]), 'kullanmıyorlar')
         self.assertEqual(vb.construct('yürümek', [[vb.Modes.negation.name], [vb.Tenses.present.name, 2]]) , 'yürümüyor')
@@ -46,7 +48,9 @@ class LangCoreVerbTest(unittest.TestCase):
         # self.assertEqual(Verb().construct('gitmek', [[Verb().Imperative.voluntative.name, 1]]), 'gidelim')      
     
     def testVerbDeconstruct(self):
-        """ """
+        """ 
+        
+        """
         vb = Verb()
         print(vb.deconstruct('yiyeyim'))
 
