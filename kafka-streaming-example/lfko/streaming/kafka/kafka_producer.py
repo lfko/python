@@ -1,30 +1,49 @@
 '''
-Created on Dec 22, 2018
+    Created on Dec 22, 2018
 
-@author: fb
+    @author: fb
 '''
 from kafka import KafkaProducer
+from time import sleep
+from threading import Thread
 
 
-class TopicProducer():
+class TopicProducer(Thread):
     '''
         Will write to a Kafka topic
     '''
 
-    def __init__(self, topic):
+    def __init__(self, queue, kafka_params, prod_id):
         '''
-        Constructor
+            Constructor
         '''
-        self.producer = self.__connect__()
-        self.topic = topic
+        print('producer_id ', prod_id)
+        Thread.__init__(self)
+        self.queue = queue
+        self.prod_id = prod_id
+        self.producer = self.__connect__(kafka_params)
     
-    def __connect__(self, host='localhost', port=2181):
-        """ """
-        # do something
-        return KafkaProducer()
+    def __connect__(self, kafka_params):
 
-    def writeToTopic(self, msg, times=1):
-        """  """
-        for i in range(times):
-            self.producer.send(self.topic, b'msg %d' % i)
-        
+        return KafkaProducer(bootstrap_servers=[':'.join(kafka_params)])
+
+    def run(self):
+        while True:
+            
+            # retrieve the parameters from the queue
+            topic, n, even = self.queue.get()
+            print('params: topic {0} n {1} even {2} '.format(topic, n, even))
+           
+            try:
+                for i in range(n):
+                    # somewhat straightforward way to distinguish between even and odd numbers
+                    if(even == True and n % 2 == 0):
+                        self.producer.send(topic, key=b'producer %d' % self.prod_id , value=b'even')
+                        self.producer.send(topic, b'msg %d' % i)
+                    elif (even == False and n % 2 == 1):
+                        self.producer.send(topic, b'msg %d' % i)
+                        self.producer.send(topic, key=b'producer %d' % self.prod_id, value=b'odd')
+                    
+                    sleep(1)  # sleeps 1 second
+            finally:
+                self.queue.task_done()

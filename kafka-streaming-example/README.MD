@@ -13,6 +13,19 @@
 	->./bin/kafka-topics.sh --list --zookeeper localhost:2181
 	>> CS4BD
 
+## To do it with docker eventually (great tutorial: https://jaceklaskowski.gitbooks.io/apache-kafka/kafka-docker.html)
+(using the wurstmeister/kafka image for running both kafka and the zookeeper in separate container)
+1. clone the repository to the local machine: https://github.com/wurstmeister/kafka-docker
+2. open shell and change to the directory
+3. execute docker-compose up
+4. (many things will happen)
+5. kafka_1      | [2019-01-31 12:52:13,798] INFO [KafkaServer id=1001] started (kafka.server.KafkaServer)
+6. test the connection:
+
+	lfko@Sartre ~ $ sudo nc -vz localhost 9092
+	Connection to localhost 9092 port [tcp/*] succeeded!
+
+
 ## Let's get our hands dirty and write some python code! ##
 The example uses the kafka-python implementation
 1. sudo pip3.6 install kafka-python
