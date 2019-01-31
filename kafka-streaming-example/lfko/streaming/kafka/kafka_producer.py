@@ -37,10 +37,10 @@ class TopicProducer(Thread):
             try:
                 for i in range(n):
                     # somewhat straightforward way to distinguish between even and odd numbers
-                    if(even == True and n % 2 == 0):
+                    if(even == True and i % 2 == 0):
                         self.producer.send(topic, key=b'producer %d' % self.prod_id , value=b'even')
                         self.producer.send(topic, b'msg %d' % i)
-                    elif (even == False and n % 2 == 1):
+                    elif (even == False and i % 2 == 1):
                         self.producer.send(topic, b'msg %d' % i)
                         self.producer.send(topic, key=b'producer %d' % self.prod_id, value=b'odd')
                     
