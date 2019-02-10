@@ -21,8 +21,8 @@ def main():
         worker.start()
     
     topic = 'CS4BD'
-    queue.put((topic, 20, True))  # even number producer
-    queue.put((topic, 10, False))  # odd number producer
+    queue.put((topic, 100, True))  # even number producer
+    queue.put((topic, 100, False))  # odd number producer
 
     # queue.join()
 

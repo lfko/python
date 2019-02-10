@@ -28,22 +28,23 @@ class TopicProducer(Thread):
         return KafkaProducer(bootstrap_servers=[':'.join(kafka_params)])
 
     def run(self):
-        while True:
-            
+
+        while True:            
             # retrieve the parameters from the queue
             topic, n, even = self.queue.get()
             print('params: topic {0} n {1} even {2} '.format(topic, n, even))
-           
+            
             try:
                 for i in range(n):
                     # somewhat straightforward way to distinguish between even and odd numbers
                     if(even == True and i % 2 == 0):
                         self.producer.send(topic, key=b'producer %d' % self.prod_id , value=b'even')
-                        self.producer.send(topic, b'msg %d' % i)
+                        # self.producer.send(topic, b'msg %d' % i)
+                        sleep(1)  # sleeps 1 second
                     elif (even == False and i % 2 == 1):
-                        self.producer.send(topic, b'msg %d' % i)
+                        # self.producer.send(topic, b'msg %d' % i)
                         self.producer.send(topic, key=b'producer %d' % self.prod_id, value=b'odd')
+                        sleep(2)  # sleeps 1 second
                     
-                    sleep(1)  # sleeps 1 second
             finally:
                 self.queue.task_done()
