@@ -1,0 +1,146 @@
+123energie,"(""123energie""):language=de ↵ ↵ AND NOT ↵ ↵ ((176820282345220):field=url;segment=""social networks"" OR @123energie OR ""123energie"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Andreas Heeg,"(""Andreas Heeg"" AND Energie*):language=de↵↵ AND NOT ↵↵(m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Andreas Mihm,Andreas Mihm
+Angela Hennersdorf,Angela Hennersdorf
+Anna Steiner,Anna Steiner
+Anton Hofreiter,"(""Anton Hofreiter"" AND ENergie*):language=de ↵ ↵ AND NOT ↵ ↵ ((598216760241817):field=url;segment=""social networks"" OR @ToniHofreiter  OR ""Toni Hofreiter"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Bankymoon,"(Bankymoon):language=de ↵ ↵ AND NOT ↵ ↵ ((1756034251321324):field=url;segment=""social networks"" OR @TheBankyMoon OR ""Bankymoon"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Bayernwerk AG,"(""Bayernwerk AG""):language=de ↵ ↵ AND NOT ↵ ↵ ((1852185055034835):field=url;segment=""social networks"" OR @Bayernwerk OR ""Bayernwerk"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+berliner energie agentur,berliner energie agentur↵
+Bernhard Pötter,Bernhard Pötter
+Bioenergie,Bioenergie↵
+Bioenergie,Bioenergie* OR Energie NEAR/5 Biomasse OR Biogene OR Biomasseheizkraftwerk* OR (Biogasanlage* OR Biomasseverfeuerungsanlage*) NEAR/5 Blockheizkraftwerk OR Biokraftstoff*
+Birgit Marschall,Birgit Marschall
+Blog und Website,(blog.stromhaltig.de OR thorsten-zoerner.com):field=url
+BNetzA,"(BNetzA OR Bundesnetzagentur OR Netzagentur) AND (Energiewende OR Netzausbau OR Stromnetz OR Stromnetzes OR Stromnetzausbau OR ""Stromnetz-Ausbau"" OR Netzausbauplanung OR Netzentwicklungsplan OR ""Netz-Entwicklungs-Plan"" OR Szenariorahmen OR Doppelkonverter OR „Doppel-Konverter“ OR „Gleichstrom-konverter“ OR Gleichstromkonverter OR Stromnetzbetreiber OR Netzbetreiber OR Übertragungsnetzbetreiber OR Tennet OR Amprion OR 50Hertz OR ""50 Hertz"" OR TransnetBW OR „Transnet BW“ OR Erdkabel? OR Erdverkabelung OR Kabeltrasse OR Strommast OR Strommasten OR Monstermasten OR Riesenmasten OR Megamasten OR Höchstspannungsmasten OR ""Höchstspannungs-masten"" OR Hochspannungsmasten OR ""Hochspannungs-masten"" OR Umspannwerk OR ""Umspann-werk"" OR Trassenkorridor OR Stromtrasse OR ""Nord-Süd-Trasse?"" OR Freileitung OR Freileitungen OR ""380-kV"" OR ""380kV"" OR „500-kV“ OR 500kV OR Starkstromleitung OR ""Starkstrom-Leitung"" OR ""Starkstrom-Trasse"" OR ""380 Kilovolt"" OR ""380-kV-Leitung"" OR ""Mega Stromleitung"" OR ""Mega-Stromleitung"" OR Monstertrasse? OR Trassenwahn OR Ausbaukorridor? OR Höchstspannungserdkabel? OR ""380-kV-Trasse"" OR Höchstspannungstrasse OR Stromautobahn OR Energieautobahn OR Gleichstromautobahn OR Höchstspannungsleitung OR Hochspannungsleitung OR Gleichstrom OR Gleichstromleitung OR ""Hochspannungs-Gleichstrom-Übertragung"" OR ""Hochspannungs-Gleichstromübertragung"" OR Hochspannungsgleichstromübertragung OR ""Höchstspannungs-Gleichstrom-Übertragung"" OR ""Höchstspannungs-Gleichstromübertragung"" OR Höchstspannungsgleichstromübertragung OR Gleichstromhöchstspannungsleitung OR ""Gleichstrom-höchstspannungsleitung"" OR ""HGÜ"" OR „HGÜ-Trasse“ OR „HGÜ-Verbindung“ OR ""Hochspannungs-Drehstrom-Übertragung"" OR ""Hochspannungs-Drehstromübertragung"" OR Hochspannungsdrehstromübertragung OR ""Höchstspannungs-Drehstrom-Übertragung"" OR ""Höchstspannungs-Drehstromübertragung"" OR Höchstspannungsdrehstromübertragung OR (""HDÜ"": language = de) OR „HDÜ-Trasse“ OR Offshoreanbindungsleitung OR Seekabel OR Netzverknüpfungspunkt OR ""Netz-Verknüpfungs-Punkt"" OR Netzanbindungspunkt OR Stichleitung OR Kohlestrom OR ""Braune Leitung"" OR ""Schmutziger Strom"" OR (Offshore NEAR/2 Wind) OR Offshorestrom OR Windstrom OR ((Energieleitungsausbaugesetz OR EnLAG OR Leitungsausbaugesetz OR NABEG OR BBPIG OR Bedarfsplangesetz OR Bundesbedarfsplangesetz OR Netzausbaubeschleunigungsgesetz OR Netzbeschleunigungsgesetz OR Bundesbedarfsplan OR Bundesfachplanung OR BFP OR Antragskonferenz OR ""Antrags-Konferenz""): language = de)) AND NOT (Mobilfunk OR Mobilfunkmonitor OR Mobilfunkdiscounter OR ""E-Plus"" OR Telekom OR Vodafon OR Unitymedia OR ""Kabel BW"" OR ""Kabel Deutschland"" OR Unitymedia OR KabelBW OR Vodafone OR Congstar OR ""1&1"" OR DSL OR ""Internet-TV"" OR ""China Mobile"" OR Verizon OR iPhone OR ""T-Com"" OR Telekommunikationssparte OR Glasfasernetz OR ""Schnelles Internet"" OR Breitband OR GSM OR UMTS OR LTE OR Loveparade OR ""Sky HD"" OR ""DAB+"" OR “Gleichstrom-USV” OR Radio OR ""FFH.de"" OR ""Hit Radio FFH"" OR ""FFH-Moderator"" OR Datei OR Dateien OR Musik OR ""offshore bank"" OR MPEG OR Peugeot OR Peugot OR Ford OR Pastor OR Toshiba OR HDMI OR Festbrennweite? OR Makro OR ""banque Nationale"" OR ""Hochstraße Nord"" OR Nikon OR Wohnung OR Wohnungen OR Miete OR Dampflok OR Modellbahn OR H0 OR ""Spur H0"" OR ""Spur TT"" OR ""Spur G"" OR ""Spur N"" OR @IRONMAN_500KV OR ?amazon.de?)↵"
+Bundesnetzagentur ,"((Bundesnetzagentur AND ""Jochen Homann"") OR (BNetzA AND ""Jochen Homann"") OR↵(Bundesnetzagentur AND ""Homann"") OR (BNetzA AND ""Homann"") OR BNetzA OR Bundesnetzagentur OR Netzagentur OR #Breitbandmessung OR #PlatzfürNetzhelden) AND NOT ""banque Nationale"""
+bürgerenergie,bürgerenergie or buergerenergie
+check 24,"(Check24 or ""check 24"" and Stromanbieterwechsel):language=de ↵ ↵ AND NOT ↵ ↵ ((335458907405):field=url;segment=""social networks"" OR @check24de OR ""CHECK24"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Ciel & Terre,"(""Ciel & Terre""):language=de ↵ ↵ AND NOT ↵ ↵ ((162875907391430):field=url;segment=""social networks"" OR @Ciel_et_Terre OR ""Ciel & Terre"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Cornelia Daniel,"(""Cornelia Daniel"" AND Energie*):language=de↵↵AND NOT↵↵(CorneliaDaniel OR ""Cornelia Daniel"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Crowddesk,"(Crowddesk):language=de ↵ ↵ AND NOT ↵ ↵ (@Buergerkredit  OR ""CrowdDesk"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+dachgold.net,dachgold.net:field=url
+DanielWetzel,DanielWetzel
+deematrix Energiesysteme,"(""deematrix Energiesysteme""):language=de ↵ ↵ AND NOT ↵ ↵(m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+DEG Deutsche Energie GmbH,DEG Deutsche Energie↵
+Digitale Transformation im Unternehmen,Digitale Transformation AND Energiewende
+Digitale Transformation im Unternehmen,(Energiewende OR Wende NEAR/3 Energie*) AND (Digital* NEAR/2 Transformation OR Digitalisierung)
+Digitalisierung & Wettbewerb,Digitalisierung AND Energiewende and Wettbewerb
+Digitalisierung & Wettbewerb,(Energiewende OR Wende NEAR/3 Energie*) AND Digital* AND Wettbewerb
+Dortmunder Stadtwerke,"(""Dortmunder Stadtwerke"" OR DEW21 OR ""Dortmunder Energie- und Wasserversorgung GmbH""):language=de ↵ ↵ AND NOT ↵ ↵ ((134062989953575):field=url;segment=""social networks"" OR @DEW21_Dortmund OR ""DEW21"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+E wie einfach,"(""E wie einfach""):language=de ↵ ↵ AND NOT ↵ ↵ ((119875737697):field=url;segment=""social networks"" OR @E_WIE_EINFACH  OR ""E WIE EINFACH"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+E.DIS AG,"(""E.DIS AG""):language=de ↵ ↵ AND NOT ↵ ↵ ((111980002583017):field=url;segment=""social networks"" OR @EDIS_AG OR ""E.DIS AG"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+E.ON,"(""E.ON""):language=de ↵ ↵ AND NOT ↵ ↵ ((393186510822990):field=url;segment=""social networks"" OR @EON_de  OR ""E.ON"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Elektromobilität,Energiewende and Elektromobilität 
+Elektromobilität,"(Energiewende OR Wende NEAR/3 Energie*) AND (Elektromobilität OR ""E-Mobilität"" OR emobilität OR ""E-Mobility"" OR Elektroauto* OR eauto or ""e-auto"" OR Ebike*)"
+E-mobilität,E-mobilität
+E-mobilität,"E-Mobility OR ""e mobility"" OR ""emobility"" OR ""ecar"" OR ""e-car"" OR ""electric car"" OR ""Elektro Auto*"" OR ""elektrischer Antrieb"" OR ""elektrisches Auto"" OR ""Brennstoffzelle"" OR ""fuel cell"" OR ""Elektromobilität"" OR ""electric drive*"" OR ""electric mobility"" OR ""elektrisches Fahrzeug"" OR ""electric drive*"" OR ""electric mobility"""
+EnBW Energie Baden-Württemberg AG,"(""EnBW Energie Baden-Württemberg AG"" OR EnBW):language=de↵↵AND NOT↵↵((125667397492554):field=url;segment=""social networks"" OR @EnBW OR ""EnBW"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+energie_bo,"(""@energie_bo"" OR ""#energie_bo"" OR ""Energie Bo"" OR ""Energie-bo"" OR ""Energie_BO""):language=de ↵ ↵ AND NOT ↵ ↵ ((1639942406324975):field=url;segment=""social networks"" OR @Energie_Bo OR ""Energie-Bo"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Energiethemen,Energiethemen
+Entega AG,"(Entega):language=de ↵ ↵ AND NOT ↵ ↵ ((198244400189055):field=url;segment=""social networks"" OR @Entega  OR ""ENTEGA_Presse"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+ENTRADE Energiesysteme AG,"(""ENTRADE Energiesysteme AG"" OR ""ENTRADE""):language=de ↵ ↵ AND NOT ↵ ↵ ((182500025179227):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Envio AG,Envio AG↵
+eprimo,"(eprimo):language=de ↵ ↵ AND NOT ↵ ↵ ((427202191015825):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+EWE AG,"(""EWE Aktiengesellschaft"" OR ""EWE AG""):language=de ↵ ↵ AND NOT ↵ ↵ ((480270958843543):field=url;segment=""social networks"" OR @EWE_AG  OR ""EWE AG"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Fabio Longo,"(""Fabio Longo"" AND Energie*):language=de↵↵AND NOT↵↵(LongoFL OR ""Fabio Longo"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Gaspreisentwicklung,(Gaspreis NEAR/5 (Entwicklung OR Prognose)) OR Gaspreisentwicklung
+Gaspreisentwicklung,((Gas NEAR/3 Preis*) OR Gaspreis*) NEAR/5 (*entwicklung* OR *entwickel* OR Prognose* OR steig* OR fall* OR sink* OR Kurs) OR Gaspreisentwicklung*
+GE Renewable Energy,"(""GE Renewable Energy""):language=de ↵ ↵ AND NOT ↵ ↵ ((1841804956108696):field=url;segment=""social networks"" OR @GErenewables  OR ""GE Renewable EnergyVerifizierter Account"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Gebäudeeffezienz,Gebäudeeffizienz AND Energie
+Gebäudeeffezienz,"Energie* AND (Gebäudeeffizienz OR ""Gebäude-Energie-Effizienz"" OR *effizien* NEAR/5 Gebäude*)"
+Georg Eble,Georg Eble
+Geothermie,Geothermie OR (Geotrhermie AND Erdwärme)
+Geothermie,Geothermie OR geothermisch* OR (Nutzung AND Erdwärme) OR Geothermiekraftwerk*
+Goldgas,"(Goldgas):language=de ↵ ↵ AND NOT ↵ ↵ ((403196319770269):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Green mountain power,"(""Green mountain power""):language=de ↵ ↵ AND NOT ↵ ↵ ((190213667663327):field=url;segment=""social networks"" OR @GreenMtnEnergy OR ""Green MountainVerifizierter Account"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+GSW Gemeinschaftsstadtwerke,"(""GSW Gemeinschaftsstadtwerke""):language=de ↵ ↵ AND NOT ↵ ↵ (m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Hambacherforst and RWE,RWE AND (Hambach* NEAR/3 (Forst OR Tagebau OR Wald OR Braukohle) OR hambacher OR Hambi OR Hambacherforst)
+Hambacherforst and RWE OLD,Hambacherforst AND RWE
+Infrastrukturausbau und Speicherproblematik,Infrastrukturausbau AND Speicherproblematik AND Energiewende
+Infrastrukturausbau und Speicherproblematik,(Energiewende OR Wende NEAR/3 Energie*) AND (Infrastrukturausbau OR Ausbau OR *Infrastruktur* OR Speicherproblem* OR Speicherung* OR *Ladesäule* OR *Ladestation* OR *Ladepunkt*)
+Innogy SE,"(""Innogy SE"" AND ""Innogy""):language=de ↵ ↵ AND NOT ↵ ↵ ((1204092086289007):field=url;segment=""social networks"" OR @innogy  OR ""innogy"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Jakob Schlandt,Jakob Schlandt
+Julia Verlinden,"(""Julia Verlinden"" AND Energie*):language=de ↵ ↵ AND NOT ↵ ↵ ((528410977196029):field=url;segment=""social networks"" OR @julia_verlinden  OR ""Dr. Julia Verlinden, MdBVerifizierter Account"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Jürgen Flauger,"((Jürgen OR Juergen) NEAR/2 Flauger OR Juergen_Flauger):language=de↵↵AND NOT↵↵(@Juergen_Flauger OR ""Jürgen Flauger"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Jürgen Scheurer,"(Jürgen NEAR/2 Scheurer):language=de ↵↵AND NOT↵↵(@juergenscheurer  OR ""Jürgen Scheurer"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Kathrin Hoffmann,"(""Kathrin Hoffmann"" AND Energie*):language=de↵↵AND NOT↵↵(hoffmannkathrin OR ""Kathrin Hoffmann"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Katrin Witsch,Kathrin Witsch
+KI in der Energiewirtschaft,"(""künstliche Intelligenz"" OR KI OR ""artificial intelligence"" OR AI)  AND (Energiewirtschaft OR Energiebranche OR Energieindustrie)"
+Klaus Hinkel,Klaus Hinkel
+KlausStratmann,Klaus Stratmann
+klickenergie,"(klickenergie):language=de ↵ ↵ AND NOT ↵ ↵ (m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Kraft-Wärme-Kopplung,"Kraft-Wärme-Kopplung OR ""Kraft Wärme Kopplung"""
+Kraft-Wärme-Kopplung,"Kraft-Wärme-Kopplung OR ""Kraft Wärme Kopplung"" OR Wärme-Kraft-Kopplung OR ""Wärme Kraft Kopplung"""
+Mainova AG,"(""Mainova ag"" OR Mainova):language=de ↵ ↵ AND NOT ↵ ↵ ((1647287978862114):field=url;segment=""social networks"" OR @MainovaAG OR ""Mainova AG"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Manuel Berkel,Manuel Berkel
+Marc Davis,Marc Davis and wallstreet
+mieterstrom,mieterstrom
+Milk the Sun,"(""Milk the Sun""):language=de ↵ ↵ AND NOT ↵ ↵ ((233335513377820):field=url;segment=""social networks"" OR @MilktheSun OR ""Milk the Sun"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Mobisol,"(""Mobisol""):language=de ↵ ↵ AND NOT ↵ ↵ ((806632329467865):field=url;segment=""social networks"" OR @Mobisol_HQ OR ""Mobisol"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+MVV Energie AG,"(""MVV Energie AG"" OR ""MVV Energie""):language=de ↵ ↵ AND NOT ↵ ↵ ((129759027142522):field=url;segment=""social networks"" OR @MVV_Partner OR ""MVV Partner"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+NaturEnergiePlus,"(NaturEnergiePlus):language=de ↵ ↵ AND NOT ↵ ↵ ((150321015058010):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+N-ERGIE AG,"(""N-ERGIE Aktiengesellschaft"" OR N-ERGIE):language=de ↵ ↵ AND NOT ↵ ↵ ((108533819233520):field=url;segment=""social networks"" OR @nergie_de OR ""N-ERGIE"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Netzausbau,"(Energiewende OR Netzausbau OR Stromnetz OR Stromnetzes OR Stromnetzausbau OR ""Stromnetz-Ausbau"" OR Netzausbauplanung OR Netzentwicklungsplan OR ""Netz-Entwicklungs-Plan"" OR Szenariorahmen OR Doppelkonverter OR „Doppel-Konverter“ OR „Gleichstrom-konverter“ OR Gleichstromkonverter OR Stromnetzbetreiber OR Netzbetreiber OR Übertragungsnetzbetreiber OR Tennet OR Amprion OR 50Hertz OR ""50 Hertz"" OR TransnetBW OR „Transnet BW“ OR Erdkabel? OR Erdverkabelung OR Kabeltrasse OR Strommast OR Strommasten OR Monstermasten OR Riesenmasten OR Megamasten OR Höchstspannungsmasten OR ""Höchstspannungs-masten"" OR Hochspannungsmasten OR ""Hochspannungs-masten"" OR Umspannwerk OR ""Umspann-werk"" OR Trassenkorridor OR Stromtrasse OR ""Nord-Süd-Trasse?"" OR Freileitung OR Freileitungen OR ""380-kV"" OR ""380kV"" OR „500-kV“ OR 500kV OR Starkstromleitung OR ""Starkstrom-Leitung"" OR ""Starkstrom-Trasse"" OR ""380 Kilovolt"" OR ""380-kV-Leitung"" OR ""Mega Stromleitung"" OR ""Mega-Stromleitung"" OR Monstertrasse? OR Trassenwahn OR Ausbaukorridor? OR Höchstspannungserdkabel? OR ""380-kV-Trasse"" OR Höchstspannungstrasse OR Stromautobahn OR Energieautobahn OR Gleichstromautobahn OR Höchstspannungsleitung OR Hochspannungsleitung OR Gleichstrom OR Gleichstromleitung OR ""Hochspannungs-Gleichstrom-Übertragung"" OR ""Hochspannungs-Gleichstromübertragung"" OR Hochspannungsgleichstromübertragung OR ""Höchstspannungs-Gleichstrom-Übertragung"" OR ""Höchstspannungs-Gleichstromübertragung"" OR Höchstspannungsgleichstromübertragung OR Gleichstromhöchstspannungsleitung OR ""Gleichstrom-höchstspannungsleitung"" OR ""HGÜ"" OR „HGÜ-Trasse“ OR „HGÜ-Verbindung“ OR ""Hochspannungs-Drehstrom-Übertragung"" OR ""Hochspannungs-Drehstromübertragung"" OR Hochspannungsdrehstromübertragung OR ""Höchstspannungs-Drehstrom-Übertragung"" OR ""Höchstspannungs-Drehstromübertragung"" OR Höchstspannungsdrehstromübertragung OR (""HDÜ"": language = de) OR „HDÜ-Trasse“ OR Offshoreanbindungsleitung OR Seekabel OR Netzverknüpfungspunkt OR ""Netz-Verknüpfungs-Punkt"" OR Netzanbindungspunkt OR Stichleitung OR Kohlestrom OR ""Braune Leitung"" OR ""Schmutziger Strom"" OR (Offshore NEAR/2 Wind) OR Offshorestrom OR Windstrom OR ((Energieleitungsausbaugesetz OR EnLAG OR Leitungsausbaugesetz OR NABEG OR BBPIG OR Bedarfsplangesetz OR Bundesbedarfsplangesetz OR Netzausbaubeschleunigungsgesetz OR Netzbeschleunigungsgesetz OR Bundesbedarfsplan OR Bundesfachplanung OR BFP OR Antragskonferenz OR ""Antrags-Konferenz""): language = de)) AND NOT (Mobilfunk OR Mobilfunkmonitor OR Mobilfunkdiscounter OR ""E-Plus"" OR Telekom OR Vodafon OR Unitymedia OR ""Kabel BW"" OR ""Kabel Deutschland"" OR Unitymedia OR KabelBW OR Vodafone OR Congstar OR ""1&1"" OR DSL OR ""Internet-TV"" OR ""China Mobile"" OR Verizon OR iPhone OR ""T-Com"" OR Telekommunikationssparte OR Glasfasernetz OR ""Schnelles Internet"" OR Breitband OR GSM OR UMTS OR LTE OR Loveparade OR ""Sky HD"" OR ""DAB+"" OR “Gleichstrom-USV” OR Radio OR ""FFH.de"" OR ""Hit Radio FFH"" OR ""FFH-Moderator"" OR Datei OR Dateien OR Musik OR ""offshore bank"" OR MPEG OR Peugeot OR Peugot OR Ford OR Pastor OR Toshiba OR HDMI OR Festbrennweite? OR Makro OR ""banque Nationale"" OR ""Hochstraße Nord"" OR Nikon OR Wohnung OR Wohnungen OR Miete OR Dampflok OR Modellbahn OR H0 OR ""Spur H0"" OR ""Spur TT"" OR ""Spur G"" OR ""Spur N"" OR @IRONMAN_500KV OR ?amazon.de?)↵"
+Onshore Windkraft,Onshore Windkraft
+Onshore Windkraft,"(Onshore OR ""on shore"") NEAR/5 (Windkraft* OR Windpark* OR Windfarm* OR Windrad* OR Windenergieanlagen OR Energie*) OR ""Onshore-Windkraft"""
+peer-to-peer energy,"peer-to-peer energy OR ""peer to peer energy"""
+peer-to-peer energy,"energy NEAR/3 (""peer-to-peer"" OR ""peer to peer"" OR p2p)"
+Peter Altmaier,"(""Peter Altmaier"" And Energie*):language=de ↵ ↵ AND NOT ↵ ↵ ((172834814572):field=url;segment=""social networks"" OR @peteraltmaier  OR ""Peter AltmaierVerifizierter Account"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Peter Crain,"(""Peter Crain"" AND Energie*):language=de↵↵AND NOT↵↵(euleminerva OR ""Peter Crain"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Pfalzwerke AG,"(""Pfalzwerke AG""):language=de ↵ ↵ AND NOT ↵ ↵ (@Pfalzwerke OR ""Pressesprecher"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Power-to-Chemicals,"Power-to-Chemicals OR ""Power to Chemicals"""
+Power-to-Gas,"Power-to-Gas OR ""power to gas"""
+Power-to-heat,"Power-to-heat OR ""power to heat"""
+Power-to-Liquids,"Power-to-Liquids OR ""power to liquids"""
+PST Europe Sales GmbH,PST Europe Sales↵
+Ralph Diermann,ralph Diermann
+Rheinenergie AG,"(""Rheinenergie AG"" OR Rheinenergie):language=de ↵ ↵ AND NOT ↵ ↵ ((614308345329870):field=url;segment=""social networks"" OR @RheinEnergie  OR ""RheinEnergie AG"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+RWE AG,"(""RWE AG"" OR RWE):language=de↵↵AND NOT↵↵((121709107920004):field=url;segment=""social networks"" OR @rwe_ag OR ""RWE AG"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Sektoren,"Sektorenkopplung AND Elektrizität OR Wärmevesorgung OR ""Verkehr und Industrie"""
+Sektoren,"(Sektorkopplung OR Sektorenkopplung) AND (Strom* OR Elektrizität* OR Wärme* OR ""Verkehr und Industrie"")"
+Smart-Grids,"Intelligent* NEAR/3 Stromnetz* OR Smart-Grids OR ""smart grids"""
+Smart-Grids ,"Smart-Grids OR ""smart grids"""
+smarthome,smarthome
+smarthome,"smarthome OR ""Smart Home"" OR ""Digital Home"""
+Solarenergie,Solarenergie OR Photovoltaik*
+Solarenergie,"Solarenergie* OR ""Solar-energie"" OR Photovoltaik* OR Sonnenenergie* OR Solarmodul* OR Solarpark*"
+Sonnen GmbH,"(""Sonnen GmbH""):language=de ↵ ↵ AND NOT ↵ ↵ ((1404509716428052):field=url;segment=""social networks"" OR @sonnenCommunity OR ""sonnen"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Städtische Werke Nürnberg,"(""Städtische Werke Nürnberg"" OR StWN):language=de ↵ ↵ AND NOT ↵ ↵ ((108533819233520):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stadtwerke Bielefeld,Stadtwerke Bielefeld
+Stadtwerke Bonn,"(""Stadtwerke Bonn""):language=de ↵ ↵ AND NOT ↵ ↵ ((751119228291906):field=url;segment=""social networks"" OR @StadtwerkeBonn OR ""Stadtwerke Bonn"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stadtwerke Bremen,"(""Stadtwerke Bremen""):language=de ↵ ↵ AND NOT ↵ ↵ ((202138836787483):field=url;segment=""social networks"" OR @swb_online OR ""swb"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stadtwerke Energie Verbund SEV ,Stadtwerke Energie Verbund SEV↵
+Stadtwerke Georgsmarienhütte GmbH,Stadtwerke Georgsmarienhütte↵
+Stadtwerke Halle,"(Stadtwerke* NEAR/2 Halle):language=de ↵ ↵ AND NOT ↵ ↵ ((522433711118559):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stadtwerke Hannover / Enercity,"(enercity OR ""Stadtwerke Hannover""):language=de ↵ ↵ AND NOT ↵ ↵ ((206741846031479):field=url;segment=""social networks"" OR @enercity_presse OR ""Presse enercity"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stadtwerke Leipzig GmbH,"(""Stadtwerke Leipzig GmbH""):language=de ↵ ↵ AND NOT ↵ ↵ ((96336263748):field=url;segment=""social networks"" OR @SWLeipzig OR ""Stadtwerke Leipzig"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stadtwerke München AG,"(""Stadtwerke München""):language=de ↵ ↵ AND NOT ↵ ↵ ((211851978876216):field=url;segment=""social networks"" OR @SWM_Muenchen OR ""Stadtwerke München"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Steag,"(Steag OR ""Steinkohlen-Elektrizität AG""):language=de↵↵AND NOT↵↵((178374855557513):field=url;segment=""social networks"" OR @ses_solar OR ""Steag ES Solar,S.L.U"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stefan Sagmeister,Stefans Sagmeister AND Energie
+Stefan Schultz,Stefan Schultz AND Energie
+STOAG Stadtwerke Oberhausen,"(""STOAG Stadtwerke Oberhausen""):language=de ↵ ↵ AND NOT ↵ ↵ (m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Strom.Manufaktur,"(""Strom.Manufaktur""):language=de ↵ ↵ AND NOT ↵ ↵ (m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Stromhoch 3,"(""Stromhoch 3""):language=de ↵ ↵ AND NOT ↵ ↵ ((177974002218245):field=url;segment=""social networks"" OR @energiehoch3 OR ""energiehoch3"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Strompreisentwicklung,(Strompreis NEAR/5 (Entwicklung OR Prognose)) OR Strompreisentwicklung
+Strompreisentwicklung,((Strom NEAR/3 Preis*) OR Strompreis*) NEAR/5 (*entwicklung* OR *entwickel* OR Prognose* OR steig* OR fall* OR sink* OR Kurs) OR Strompreisentwicklung*
+Susanne Ehlerding,Susanne Ehlerding
+Svenja Schulze,"(""Svenja Schulze"" AND Energie*):language=de ↵ ↵ AND NOT ↵ ↵ ((49017107028):field=url;segment=""social networks"" OR @SvenjaSchulze68  OR ""Svenja SchulzeVerifizierter Account"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Svenja Schulze ,Svenja Schulze AND Energie*
+Thermondo,"(""Thermondo""):language=de ↵ ↵ AND NOT ↵ ↵ ((582382905131204):field=url;segment=""social networks"" OR @Thermondo OR ""Thermondo"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Thorsten Zoerner,"(""Thorsten Zoerners""  AND Energie*):language=de↵↵AND NOT↵↵(zoernert OR ""Thorsten Zoerner"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Thüga Aktiengesellschaft,"(""Thüga Aktiengesellschaft"" OR THÜGA OR THUEGA):language=de ↵ ↵ AND NOT ↵ ↵ ((551822831865654):field=url;segment=""social networks"" OR @thuega OR ""Thüga"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Transaktionsmodelle,Transaktionsmodell* and Energie
+Transaktionsmodelle,Energie* AND Transaktionsmodell*
+Vattenfall Europe AG,"(""Vattenfall Europe AG"" OR Vattenfall):language=de ↵ ↵ AND NOT ↵ ↵ ((1508446642792459):field=url;segment=""social networks"" OR @Vattenfall_De OR ""Vattenfall Germany"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Vera Eckert,Vera Eckert
+Verivox,"(Verivox):language=de ↵ ↵ AND NOT ↵ ↵ ((108003682505):field=url;segment=""social networks"" OR @Verivox  OR ""Verivox"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Wasserkraft,"Wasserkraft OR ""Hydro-Energie"""
+Wasserkraft,"Wasserkraft* OR Wasserkraftwerk* OR Wasserkraftanlage* OR ""Hydro-Energie"" OR Hydroenergie* OR Hydroenergieanlage* OR (Staumauer OR Stausee OR Staudamm) NEAR/5 *Energie* OR Laufwasserkraftwerk* OR Speicherkraftwerk* OR Pumpspeicherkraftwerk* OR Kavernenkraftwerk* OR Gezeitenkraftwerk* OR Wellenkraftwerk* OR Strömungskraftwerk* OR Meeresströmungskraftwerk* OR Gletscherkraftwerk* OR Wasserleitungskraftwerk* OR Speicherkraftwerk*"
+wechselpiraten,"(wechselpiraten):language=de ↵ ↵ AND NOT ↵ ↵ ((706614939406546):field=url;segment=""social networks"" OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+WePower,"(WePower):language=de ↵ ↵ AND NOT ↵ ↵ ((260254817801494):field=url;segment=""social networks"" OR @WePowerN OR ""WePower"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Windenergie,Windenergie↵
+Windenergie,"Windenergie* OR ""Wind-energie"" OR Windenergieanlage* OR Windkraft* OR Windkraftanlage* OR Windrad* OR Windräder* OR Windindustrie* OR Windpark* OR Offshore NEAR/5 Energie*"
+Wuppertaler Sadtwerke,"(""Wuppertaler Stdtwerke""):language=de ↵ ↵ AND NOT ↵ ↵ ((124281297648098):field=url;segment=""social networks"" OR @WSWWuppertal  OR ""Wuppertal Stadtwerke"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Yello Strom,"(""Yello Strom""):language=de ↵ ↵ AND NOT ↵ ↵ ((201065353264638):field=url;segment=""social networks"" OR @yello_de OR ""yello"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
+Zen Ecosystems,"(""Zen Ecosystems""):language=de ↵ ↵ AND NOT ↵ ↵ ((1119811931402035):field=url;segment=""social networks"" OR @ZenEcosystems OR ""Zen Ecosystems"":field=author OR m/w OR w/m OR ""rt @*"" OR (*.at/* OR *.ch/*):field=url)"
