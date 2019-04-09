@@ -7,6 +7,33 @@ import re
 import csv
 import pandas as pd
 
+import rdflib as rdf
+from pprint import pprint
+
+from urllib.request import urlopen
+from urllib.parse import quote_plus
+import json
+import codecs
+
+
+def synonyms(term,lang = None):
+    
+    if not lang == None:
+        langFilter = """?rel2 ?name FILTER ( lang(?name)="%s" ).""" % lang
+        goalTerm = """"%s"@%s""" % (term,lang)
+    else:
+        langFilter = ""
+        goalTerm = "\"%s\"" % term
+    
+    query = """SELECT DISTINCT ?target ?name WHERE {
+            VALUES ?rel {rdfs:label  skos:altLabel}
+            VALUES ?rel2 {rdfs:label skos:altLabel}
+            ?target ?rel %s;
+            %s
+            FILTER ( ?rel != ?rel2) }""" % (goalTerm,langFilter)
+    
+    return query
+
 def removeAbbreviations(query):
     '''
         @summary: remove abbreviations like country codes or gender
@@ -80,16 +107,55 @@ def findMatches(remainQuery):
     # return as a set so as to filter out duplicates
     return set(terms)
 
+def processRow(row):
+    lsTerms = []
+    # read the csv file
+    #with codecs.open(inputFile,"r","utf-8") as csvfile:
+    #    freader = csv.reader(csvfile)
+    #    for row in freader:
 
+    terms = findMatches(row[1])
+    lsTerms.append(terms)
+    # add the keyword to the beginning of the list
+    #lsTerms.insert(0, row[0])
+    # print values tab separated
+    #print(*lt, sep='\t')
+    
+    return lsTerms
 
 if __name__ == '__main__':
     '''
         @summary: main
     '''
+    #inputFile = 'Searches_Automotive.csv'
+    inputFile = 'Searches_Energy.csv'
 
-    #fname = 'Searches_Automotive.csv'
-    fname = 'Searches_Energy.csv'
-    
+    #inputFile = "Cornelsen-Thesaurus-1.0-nodes.csv"
+    wikiDataURL = "https://query.wikidata.org/sparql?format=json&query="
+    language = "de"
+
+    # out file
+    with codecs.open("WikiData-Synonyms.csv","w","utf-8") as o:
+        with codecs.open(inputFile,"r","utf-8") as f:
+        #.readline()
+            freader = csv.reader(f)
+            for row in freader:
+                wordList = processRow(row)
+                #wordList = set([line.split("\t")[0] for line in f.readlines() ])
+                o.write(row[0])
+                for word in wordList:
+                    for w in word:
+                        x = urlopen(wikiDataURL + quote_plus(synonyms(w,"de")))
+                        raw_data = x.read()
+                        encoding = x.info().get_content_charset('utf8')  # JSON default
+                        data = json.loads(raw_data.decode(encoding))
+
+                        noOfSynonyms = len(data['results']['bindings'])
+                        
+                        o.write('' + "\t" + w + "\t" + "\t".join([entry['name']['value'] for entry in data['results']['bindings']]) + "\n") 
+
+
+    '''
     # read the csv file
     with open(fname) as csvfile:
         freader = csv.reader(csvfile)
@@ -101,3 +167,4 @@ if __name__ == '__main__':
             lt.insert(0, 'KW: ' + row[0])
             # print values tab separated
             print(*lt, sep='\t')
+    '''
