@@ -223,7 +223,7 @@ def optimize(BS, iterate=15):
             if f(CP[0], CP[1]) < BS[dim][1]:
                 BS = updateBestSimplex(BP, GP, CP, f)
             else:
-                m, CPP = doCompression(BS, BP, WP)
+                m, CPP = doCompression(BS)
                 BS = updateBestSimplex(BP, m, CPP, f)
             
         plotFunc(BS)
@@ -274,9 +274,9 @@ if __name__ == '__main__':
     bsm = fitBestSimplex(sm, sm_eval)
     
     # (4) generate domain for plotting and optimization
-    # X, Y, Z = genDomain()
+    X, Y, Z = genDomain()
     # plotFunc()
     # print(BS)
-    X, Y, Z = readDomain()
+    # X, Y, Z = readDomain()
     # plotDomain()
-    # optimize(bsm, iterate=15)
+    optimize(bsm, iterate=15)
