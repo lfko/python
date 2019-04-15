@@ -60,14 +60,12 @@ def buildSimplex(A, B, C, fA, fB, fC):
 """
 
 
-def doReflection(CP, WP, alpha=1):
+def doReflection(CP, WP):
     '''
-        @param m: midpoint
+        @param CP: centroid point
         @param WP: worst point
-        @param alpha: reflection parameter
         @return: reflected point
     '''
-    # return (CP[0] - alpha * WP[0], CP[1] - alpha * WP[1])
     return (2. * CP[0] - WP[0], 2. * CP[1] - WP[1])
 
 
@@ -81,7 +79,7 @@ def doExpansion(CP, RP, gamma=2):
     return (2. * RP[0] - CP[0], 2. * RP[1] - CP[1])
 
 
-def doContraction(m, BS):
+def doContraction(CP, WP):
     '''
         @param points: points, worst one excluded
         @param x_h: worst point
@@ -90,11 +88,10 @@ def doContraction(m, BS):
     '''    
     
     # m = calcCentroid(BS)
-    RP = doReflection(m, BS[dim][0])
-    WP = BS[2][0]
-    C1P = ((RP[0] + m[0]) / 2., (RP[1] + m[1]) / 2.)
-    C2P = ((WP[0] + m[0]) / 2., (WP[1] + m[1]) / 2.)
-    if f(C1P[0], C1P[1]) <= f(C2P[0], C2P[1]):
+    RP = doReflection(CP, WP)
+    C1P = ((RP[0] + CP[0]) / 2., (RP[1] + CP[1]) / 2.)
+    C2P = ((WP[0] + CP[0]) / 2., (WP[1] + CP[1]) / 2.)
+    if getValueForPoint(C1P) <= getValueForPoint(C2P):
         return C1P
     return C2P
 
@@ -122,7 +119,7 @@ def optimize(BS, iterate=15):
         @summary: the actual optimization
     '''
     
-    print("k \t {:^10}   \t {:^10}   \t {:^10}".format("Best point", "Good point", "Worst point"))
+    print("k \t {:^10}   \t {:^40}   \t {:^20}".format("Best point", "Good point", "Worst point"))
     
     for _ in range(iterate):
         # m = calcCentroid(BS) 
@@ -130,34 +127,92 @@ def optimize(BS, iterate=15):
         GP = BS[1][0]  # good point coordinates
         BP = BS[0][0]  # best point coordinates
         
-        print("{} \t {}   \t {}   \t {}"
-                .format(_ + 1, BS[0][0], BS[1][0], BS[dim][0]))
+        fWP = BS[dim][1]
+        fGP = BS[1][1]
+        fBP = BS[0][1]
+        
+        print("{} \t {}({})   \t {}({})   \t {}({})"
+                .format(_ + 1, BS[0][0], fBP, BS[1][0], fGP, BS[dim][0], fWP))
         
         CP = calcCentroid(BP, GP) 
         RP = doReflection(CP, WP)  # reflection point
-        print('RP: ', RP)
-        print(getValueForPoint(RP), getValueForPoint(GP))
-        if  getValueForPoint(RP) < getValueForPoint(GP):
-            print('case (I)')
-            print(getValueForPoint(RP), getValueForPoint(BP))
-            if getValueForPoint(BP) > getValueForPoint(RP):
-                BS = buildSimplex(BP, GP, RP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(RP))
-                print('new BestSimplex: ', BS)
-            
-            else:    
-                EP = doExpansion(CP, RP)  # expansion point
-                print('EP ', EP)
-                print(getValueForPoint(EP))
-
-                if getValueForPoint(RP) < getValueForPoint(BP):
-                    BS = buildSimplex(BP, GP, EP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(EP))
-                else:
-                    BS = buildSimplex(BP, GP, RP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(RP))
-    
-                print('new BestSimplex: ', BS)
+        fRP = getValueForPoint(RP)
         
+        print("Reflection point: {}({})".format(RP, fRP))
+
+        if fRP != None and fBP < fRP < fGP:
+            print('case (I)')
+
+            BS = buildSimplex(BP, GP, RP, fBP, fGP, fRP)  # WP -> RP
+            print('new BestSimplex: ', BS)
+
+        elif fRP != None and fRP < fBP:
+            print('case (II)')
+            
+            EP = doExpansion(CP, RP)  # extend the reflected point
+            fEP = getValueForPoint(EP)
+            
+            print("Expansion point: {}({})".format(EP, fEP))
+            
+            if fEP != None and fEP < fRP:
+                BS = buildSimplex(BP, GP, EP, fBP, fGP, fEP)  # WP -> EP
+                print('new BestSimplex: ', BS)
+            else:
+                BS = buildSimplex(BP, GP, RP, fBP, fGP, fRP)  # WP -> RP
+                print('new BestSimplex: ', BS)
+        else:
+            print('inequalities are not satisfied')
+            CP = doContraction(CP, WP)
+            fCP = getValueForPoint(CP)
+            
+            print("Contraction point: {}({})".format(CP, fCP))
+            
+            if fCP < fGP:
+                BS = buildSimplex(BP, GP, CP, fBP, fGP, fCP)  # WP -> CP
+                print('new BestSimplex: ', BS)
+            else:
+                print('shrink')
+                pass
+                
+                # BS = buildSimplex(BP, GP, CP, fBP, fGP, fCP)  # WP -> CP
+                # print('new BestSimplex: ', BS)
+                
     print('final Simplex: ', BS)
     plt.show()
+
+
+def oldNM():
+    '''
+    '''
+    if  fBP < fRP < fGP:
+        print('case (I)')
+
+        if fBP < fRP:
+            BS = buildSimplex(BP, GP, RP, fBP, fGP, fRP)
+            print('new BestSimplex: ', BS)
+        
+        else:    
+            EP = doExpansion(CP, RP)  # expansion point
+            print('EP ', EP)
+            print(getValueForPoint(EP))
+
+            if getValueForPoint(RP) < getValueForPoint(BP):
+                BS = buildSimplex(BP, GP, EP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(EP))
+            else:
+                BS = buildSimplex(BP, GP, RP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(RP))
+
+            print('new BestSimplex: ', BS)
+    else:
+        print('case (II)')
+        if getValueForPoint(RP) < getValueForPoint(WP):
+            BS = buildSimplex(BP, GP, RP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(RP))
+        
+        CP = doContraction(CP, BS)  # contraction point
+        if getValueForPoint(CP) < getValueForPoint(WP):
+            BS = buildSimplex(BP, GP, CP, getValueForPoint(BP), getValueForPoint(GP), getValueForPoint(CP))
+        else:
+            m, CPP = doCompression(BS)
+            # BS = updateBestSimplex(BP, m, CPP, f)
 
 
 def getValueForPoint(pt):
